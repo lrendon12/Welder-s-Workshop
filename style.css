@@ -1,0 +1,54 @@
+.container {
+    width: 100%;
+}
+
+.nav-wrapper {
+    padding-left: 40%;
+    background-color: #009688;
+}
+
+.brand-logo {
+    font-family: cursive;
+}
+
+
+
+#map {
+    background-color: white;
+    height: 410px;
+}
+
+.location,
+.incomplete,
+.complete,
+.inprogress {
+    color: black;
+    font-size: small;
+    border: black;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.col-lg-7 {
+
+    width: 39%;
+    margin-left: 60%;
+    height: 400px;
+
+}
+
+.completeheader {
+    text-align: center;
+}
+
+.btn:focus {
+    background-color: lightgreen;
+}
+
+.active {
+    background-color: lightgreen;
+}
+
+#chart {
+    float: right;
+}

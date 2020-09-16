@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Welding Worklist</title>
+
+    <!-- Compiled and minified CSS through Materialize -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <!-- Materialize icon link-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Link to local css styling-->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    <nav>
+        <div class="nav-wrapper">
+            <a class="brand-logo">Welders Organizer</a>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col lg m6">
+                <form>
+                    <div class="input-field col s6">
+                        <input id="project-name" class="validate" type="text">
+                        <label for="project-name">Project Name</label>
+                    </div>
+                    <div class="input-field col s6">
+                        <input id="address" class="validate" type="text">
+                        <label for="address">Project Address</label>
+                    </div>
+                    <button id="addtodo" class="waves-effect waves-light btn nothing">Add Project</button>
+                </form>
+
+                <h4>Project List:</h4>
+                <table id="to-do-list">
+                    <th>Project Name</th>
+                    <th>Incomplete</th>
+                    <th>In Progress</th>
+                    <th>Complete</th>
+                    <th>Location</th>
+
+                </table>
+
+            </div>
+            <!--for map-->
+            <div class="col lg m6">
+                <div class="card">
+                    <h4>Location:</h4>
+                    <div class="card-action" id="map"></div>
+                </div>
+
+            </div>
+            <div id="chart" class="col lg m6">
+                <div class="card">
+                    <h4>Progress:</h4>
+                    <canvas id="myChart" width="400" height="400"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <!--chart source-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+        integrity="sha512-s+xg36jbIujB2S2VKfpGmlC3T5V2TF3lY48DX7u2r9XzGzgPsa6wTpOQA7J9iffvdeBN0q9tKzRxVxw1JviZPg=="
+        crossorigin="anonymous"></script>
+
+    <script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVkRUo11j1MN8Iu_9d7Ru_NNXWARb_MdA"></script>
+
+</body>
+
+</html>
